@@ -2,7 +2,7 @@
 robot: "g1"
 
 # sim asset 
-asset_path: "unitree_g1/mjcf/g1_29dof_rev_1_0_box_foot.xml"
+asset_path: "mjcf/g1_29dof_rev_1_0_box_foot.xml"
 
 # policy 
 policy_path: "rl_policies/g1_29DOF_sand.pt"
