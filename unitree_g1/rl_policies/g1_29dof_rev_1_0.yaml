@@ -2,10 +2,11 @@
 robot: "g1"
 
 # sim asset 
-asset_path: "mjcf/g1_29dof_box_foot_rev.xml"
+asset_path: "mjcf/g1_29dof_box_foot.xml"
 
 # policy 
-policy_path: "rl_policies/g1_29DOF_sand.pt"
+policy_path: "rl_policies/g1_29DOF_sand.pt" # trained with hydro-elastic contact model
+# policy_path: "rl_policies/g1_29DOF_rigid.pt" # trained with IsaacLab rigid ground
 
 # dof parameters
 num_dofs: 29
