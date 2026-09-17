@@ -1,5 +1,5 @@
-<mujoco model="g1_29dof_rev_1_0_box_foot">
-    <!-- Collision geometry follows ../urdf/g1_29dof_rev_1_0_box_foot.urdf. -->
+<mujoco model="g1_29dof_rev_1_0_box_foot_improved_collision">
+    <!-- Collision geometry follows ../urdf/g1_29dof_rev_1_0_box_foot_improved_collision.urdf. -->
     <!-- Include in a scene with a geom named "floor" for the foot contact pairs. -->
     <compiler angle="radian" meshdir="../meshes"/>
 
@@ -169,7 +169,6 @@
                             <joint name="left_knee_joint" class="knee"/>
                             <geom class="visual" mesh="left_knee_link"/>
                             <body name="left_ankle_pitch_link" pos="0 -9.4445e-05 -0.30001">
-                                <geom name="left_ankle_pitch_link_collision" class="collision" type="mesh" mesh="left_ankle_pitch_link"/>
                                 <inertial pos="-0.007269 0 0.011137" quat="0.603053 0.369225 0.369225 0.603053" mass="0.074"
                                         diaginertia="1.89e-05 1.40805e-05 6.9195e-06"/>
                                 <joint name="left_ankle_pitch_joint" class="ankle_pitch"/>
@@ -217,7 +216,6 @@
                             <joint name="right_knee_joint" class="knee"/>
                             <geom class="visual" mesh="right_knee_link"/>
                             <body name="right_ankle_pitch_link" pos="0 9.4445e-05 -0.30001">
-                                <geom name="right_ankle_pitch_link_collision" class="collision" type="mesh" mesh="right_ankle_pitch_link"/>
                                 <inertial pos="-0.007269 0 0.011137" quat="0.603053 0.369225 0.369225 0.603053" mass="0.074"
                                         diaginertia="1.89e-05 1.40805e-05 6.9195e-06"/>
                                 <joint name="right_ankle_pitch_joint" class="ankle_pitch"/>
@@ -265,7 +263,7 @@
                         <site name="mid360" size="0.01" pos="0.0002835 0.00003 0.41618" quat="0.00000094 -0.99979404 0.00004632 0.02029493"/>
                         <body name="left_shoulder_pitch_link" pos="0.0039563 0.10022 0.24778"
                             quat="0.990264 0.139201 1.38722e-05 -9.86868e-05">
-                            <geom name="left_shoulder_pitch_link_collision" class="collision" type="cylinder" size="0.03 0.025" pos="0 0.04 -0.01" quat="0.707106781186548 0 0.707106781186547 0"/>
+                            <geom name="left_shoulder_pitch_link_collision" class="collision" type="cylinder" size="0.03 0.025" pos="0 0.04 -0.01" quat="0.7071067811865476 0 0.7071067811865475 0"/>
                             <inertial pos="0 0.035892 -0.011628" quat="0.654152 0.0130458 -0.326267 0.68225" mass="0.718"
                                     diaginertia="0.000465864 0.000432842 0.000406394"/>
                             <joint name="left_shoulder_pitch_joint" class="shoulder_pitch"/>
@@ -319,7 +317,7 @@
                         </body>
                         <body name="right_shoulder_pitch_link" pos="0.0039563 -0.10021 0.24778"
                             quat="0.990264 -0.139201 1.38722e-05 9.86868e-05">
-                            <geom name="right_shoulder_pitch_link_collision" class="collision" type="cylinder" size="0.03 0.025" pos="0 -0.04 -0.01" quat="0.707106781186548 0 0.707106781186547 0"/>
+                            <geom name="right_shoulder_pitch_link_collision" class="collision" type="cylinder" size="0.03 0.025" pos="0 -0.04 -0.01" quat="0.7071067811865476 0 0.7071067811865475 0"/>
                             <inertial pos="0 -0.035892 -0.011628" quat="0.68225 -0.326267 0.0130458 0.654152" mass="0.718"
                                     diaginertia="0.000465864 0.000432842 0.000406394"/>
                             <joint name="right_shoulder_pitch_joint" class="shoulder_pitch"/>
